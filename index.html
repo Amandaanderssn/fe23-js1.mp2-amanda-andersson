@@ -1,0 +1,70 @@
+<!-- Amanda Andersson -->
+<!-- Miniprojekt 2 -->
+<!-- Sten, sax, påse -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miniprojekt 2 - Sten, sax, påse</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- Formulär där spelaren måste skriva in sitt namn för att spelet ska kunna börja -->
+    <form class="nameForm">
+      <div id="nameInputDiv">
+        <h2>Skriv ditt namn för att börja spela!</h2>
+        <input type="text" placeholder="Ditt namn" id="namn" />
+        <button>Börja spela!</button>
+      </div>
+    </form>
+    <div class="theWholeGame">
+      <h1>STEN, SAX ELLER PÅSE?</h1>
+      <p class="rulesP">
+        ____________Den spelare som vinner tre gånger har vunnit spelet
+        ____________
+      </p>
+      <p class="rulesP">
+        Du spelar genom att välja något av följande alternativ: sten, sax eller
+        påse.
+      </p>
+      <!-- I denna div ligger spelets innehåll -->
+      <div class="gameDiv">
+        <div class="spelareEtt">
+          <h2 id="dittNamn"></h2>
+          <!-- Spelarens poäng -->
+          <p>Poängresultat:</p>
+          <div>
+            <p class="scorePlayer1">Dina poäng: 0</p>
+          </div>
+          <div class="fitcontent">
+            <h3 id="sten">STEN</h3>
+            <h3 id="sax">SAX</h3>
+            <h3 id="påse">PÅSE</h3>
+          </div>
+        </div>
+        <div class="spelareTvå">
+          <h2>Datorn</h2>
+          <!-- Spelarens (datorns) poäng -->
+          <p>Poängresultat:</p>
+          <div>
+            <p class="scorePlayer2">Dina poäng: 0</p>
+          </div>
+          <div>
+            <h3 id="computerAnswer">Väntar på ditt svar...</h3>
+          </div>
+        </div>
+      </div>
+      <p id="RightOrWrong"></p>
+    </div>
+    <!-- När speler är slut ska detta visas -->
+    <div class="result">
+      <h2></h2>
+      <p></p>
+      <!-- Knappt man ska trycka på ifall man vill spela igen -->
+      <button>Spela igen</button>
+    </div>
+  </body>
+</html>
