@@ -36,13 +36,11 @@ h1 {
 }
 
 .fitcontent {
-  width: fit-content;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  justify-content: space-between;
 }
 
-.fitcontent:hover {
+.fitcontent h3:hover {
   cursor: pointer;
 }
 
