@@ -37,7 +37,7 @@ h1 {
 
 .fitcontent {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .fitcontent h3:hover {
